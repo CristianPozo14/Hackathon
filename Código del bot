@@ -11,7 +11,7 @@ async def on_ready():
     print(f'We have logged in as {bot.user}')
 
 @bot.command()
-async def Hola(ctx):
+async def hola(ctx):
     await ctx.send(f'Hola {bot.user}!')
 
 @bot.command()
@@ -40,5 +40,8 @@ async def reflexion(ctx):
 async def presentate(ctx):
     await ctx.send(f'Hola, soy un bot de Discord creado para crear conciencia de la contaminacion de manera más agradable y graciosa para los jovenes{bot.user}!')
 
+@bot.command()
+async def comandos(ctx):
+    await ctx.send(f'Comandos para usar: "$presentate" (esto hará que el bot se presente. "$reflexion" (esto te dirá reflexiones sobre el cambio climatico). "$meme"(esto hace que te de memes para reflexionar de forma divertida sobre el cambio climatico). "$riete" (esto hace que el bot se ria contigo). "$hola" (esto hace que el bot te salude){bot.user}!')
 
-bot.run("PONGA ACÁ SU TOKEN)
+bot.run("PONGA ACÁ EL TOKEN")
